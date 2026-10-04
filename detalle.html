@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#db4938">
+    <title>Detalle del Café</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>Coffee PWA</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>About</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <a href="index.html" class="btn-back" aria-label="Volver al inicio">← Volver</a>
+
+            <article id="coffee-detail" class="coffee-detail">
+                <img id="detail-img" src="" alt="Café">
+                <h2 id="detail-title"></h2>
+                <p id="detail-desc"></p>
+                <div id="detail-details" class="detail-info"></div>
+            </article>
+        </div>
+    </main>
+
+    <!-- ORDEN IMPORTANTE: primero los datos, luego la lógica -->
+    <script src="js/coffees.js"></script>
+    <script src="js/detalle.js"></script>
+</body>
+</html>
